@@ -76,7 +76,7 @@ void init_bm(int m0,int mb);
 
 int stream(int n);
 int seed(int Ik, int n);
-int random(int i, int n);
+int rani(int i, int n);
 real ranf(void);
 real uniform(real a, real b);
 real expntl(real x);

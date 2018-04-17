@@ -68,7 +68,7 @@ real uniform(real a, real b)
     }
 
 /*--------------------  RANDOM INTEGER GENERATOR  --------------------*/
-int random(int i, int n)
+int rani(int i, int n)
     { /* 'random' returns an integer equiprobably selected from the   */
       /* set of integers i, i+1, i+2, . . , n.                        */
       if (i>n) then error(0,"random Argument Error: i > n");

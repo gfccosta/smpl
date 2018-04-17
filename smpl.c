@@ -27,8 +27,8 @@
 #define FF 12        /* form feed                           */
 
 static FILE
-  *display=stdout,   /* screen display file                 */
-  *opf=stdout;       /* current output destination          */
+  *display,   /* screen display file                 */
+  *opf;       /* current output destination          */
 
 static int
   event,             /* current simulation event            */
@@ -61,6 +61,8 @@ static char
 /*---------------  INITIALIZE SIMULATION SUBSYSTEM  ------------------*/
 void smpl(int m, char *s)
     {
+      display=stdout;
+      opf=stdout;  
       int i;
       static int rns=1;
       blk=1; avl=-1; avn=0;       /* element pool & namespace headers */
